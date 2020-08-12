@@ -50,7 +50,7 @@ class ValueNetwork(nn.Module):
     def forward(self,x):
         out = F.relu(self.fc1(x))
         out = F.relu(self.fc2(out))
-        out = self.fc3(out)
+        out = torch.tanh(self.fc3(out))
         return out
 
 
