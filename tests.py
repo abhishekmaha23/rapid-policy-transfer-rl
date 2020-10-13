@@ -1,6 +1,6 @@
 import torch
 import matplotlib.pyplot as plt
-from attempt_2.v4.utils import *
+from attempt_2.v6.utils import *
 
 
 def test_target():
@@ -67,10 +67,10 @@ def test_compare_weights_of_models(model_1, model_2):
         if p1.data.ne(p2.data).sum() > 0:
             # print('Models are unequal in weights')
             pass
-    # print('Models are equal')
+    print('Models are equal')
 
 
 def test_compare_models_on_states(model_1, model_2, states_var):
     actions_1 = model_1(states_var)
     actions_2 = model_2(states_var)
-    # print('Equality of models on the states - ', torch.equal(actions_1, actions_2))
+    print('Equality of models on the states - ', torch.equal(actions_1, actions_2))
