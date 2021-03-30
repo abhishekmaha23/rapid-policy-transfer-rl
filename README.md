@@ -5,3 +5,5 @@ It's implemented with PyTorch 1.6.0 and the higher higher-order-gradient library
 It will soon be updated with some more methods and functionality, and a report of the algorithmic flow, results and other components.
 
 I hope you have as much fun with it as I had building it!
+
+Link to thesis: https://research.tue.nl/en/studentTheses/analyzing-policy-gradient-approaches-towards-rapid-policy-transfe
